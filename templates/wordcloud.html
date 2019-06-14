@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guns & Games</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<div class="container">
+    <nav class="navbar navbar-expand-lg mb-1">
+        <!-- Add social media icons -->
+        
+        <!-- Set up button for smaller screens -->
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Set up buttons for nav bar-->
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/wordcloud">Wordcloud</a></li>
+                <li class="nav-item"><a class="nav-link" href="/analysis">Analysis</a></li>
+                <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
+                <li class="nav-item"><a class="nav-link" href="/conclusion">Conclusion</a></li>
+            </ul>
+        </div>
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.com" target="_blank" class="fa fa-pinterest"></a>
+        <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+        <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+    </nav>
+    </nav>
+<style>html, body {
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.zc-ref {
+	display:none;
+}
+zing-grid[loading]{height:800px;}</style></head>
+	<body>
+		<div id=myChart_vg></div>
+	<script>ZC.LICENSE=["b55b025e438fa8a98e32482b5f768ff5"];var myConfig = {
+  type: 'wordcloud',
+  options: {
+		text: 
+		`America, 1899. The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.
+Call of Duty 4: Modern Warfare is a first-person shooter developed by Infinity Ward and published by Activision for Xbox 360 , Playstation 3 and PC. It is the fourth installment in the Call of Duty video game series (excluding expansions), the first not to be set during World War II. It was announced on April 25, 2007. It was released on November 6, 2007 in North America, on November 7, 2007 in Australia, and on November 9, 2007 in Europe. The game also became available on Steam on November 6, 2007 for pre-purchase and is available to play as of November 12, 2007.
+
+Call of Duty 4: Modern Warfare introduces a variety of game play styles into the single player campaign completely new to the Call of Duty series. The game moves away from the standard three country-specific campaign style, and allows the plot to play through more like a film style plot with interlaced story lines from the perspective of the player as Paul Jackson, a member of the United States Marine Corps 1st Force Recon and Soap MacTavish, a member of the British 22nd SAS Regiment. There is also a variety of cameo-style missions where you play as various other soldiers such as an AC-130 Spectre Gunship gunner, or as one part of a two-man sniper team behind enemy lines in a flashback-style mission.
+
+Call of Duty 4: Modern Warfare focuses on the variation of modern warfare as an infantry soldier by allowing the player to control soldiers in a vast number of different scenarios, straying away from the constant straightforward action of previous Call of Duty titles and allowing for both heavy intensity fire fights and slower paced drama styled intensity. The series' move to modern warfare has also introduced a variety of new modern weapons and technology to be introduced to the Call of Duty franchise. Such showcased weapons and attachments include M203 grenade launchers, and the AN/PEQ-2 Target Pointer for use in conjunction with night vision goggles, MP5SD submachine guns, the M4A1 Grenadier, and the FGM-148 Javelin portable anti-tank guided missile among many others.
+Call of Duty: Black Ops III combines three unique game modes: Campaign, Multiplayer and Zombies, providing fans with the deepest and most ambitious Call of Duty ever. The Campaign has been designed as a co-op game that can be played with up to 4 players online or as a solo cinematic thrill-ride. Multiplayer will be the franchiseÕs deepest, most rewarding and most engaging to date, with new ways to rank up, customize, and gear up for battle. And Zombies delivers an all-new mind-blowing experience with its own dedicated narrative. The title ushers in an unprecedented level of innovation, including jaw-dropping environments, never before experienced weaponry and abilities, and the introduction of a new, improved fluid movement system.
+Call of Duty: WWII is the fourteenth main instalment in the Call of Duty series. The game was developed by Sledgehammer Games with help from Raven Software. The game is published by Activision and was released for the Playstation 4, Xbox One and PC on November 3rd 2017. 
+
+Call of Duty: WWII takes the series back to the past while the last five Call of Duty games had futuristic setting. Call of Duty: WWII is also the first Call of Duty in three years to implement the boots on the ground movement system.
+
+The base game includes a 6-8 hour campaign, a multiplayer mode and a zombies mode. 
+Call of Duty¨: Black Ops takes you deep behind enemy lines into the world of deniable operations as a member of an elite special forces unit engaging in covert warfare, classified operations, and explosive conflicts across the globe. With access to a variety of exclusive weaponry and equipment, your actions will tip the balance during the most dangerous time period mankind has ever known.
+
+Black Ops features:
+
+An epic campaign and story that keeps you glued to edge of your seat from start to finish.
+Call of Duty's signature Multiplayer gameplay with deeper levels of character customization, and all new modes like Wager Matches, the Theater, and Combat Training which can be played Solo or Co Op.
+Zombies! Providing endless hours of intense Zombie-slaying entertainment, Solo or Co-Op.
+Call of Duty¨: World at Warª changes the rules of engagement by thrusting players into tension-filled, unforgiving battles against a new ferocious enemy in the most dangerous and suspenseful action ever seen in World War II.
+Experience an uncensored edge to combat, as soldiers face the most harrowing and climactic European and Pacific battles in which an enemy, who knows no surrender and no retreat, fights to the last breath, unleashing an arsenal of lethal surprising tactics. Peril and danger lurk throughout the battlefield as players combat the unknown risk of the new chaos of battle.
+
+Final battles: Play as a U.S. Marine or Russian conscript across a variety of European and Pacific infantry, vehicle and airborne missions. An all new depth of WWII-era combat variety, from the unique and varying locations that traverse the ruins of Western Europe to the harsh wetlands of Imperial Japan, immerses gamers into an adrenaline-filled, epic struggle.
+Co-op campaign mode: No One Fights Alone takes on new meaning as players can complete the entire single player campaign with up to four players online or two players via split-screen (both online and offline). Complete unique co-op challenges to earn rewards and bragging rights. The title takes the perks, rankings and online stats players love in multiplayer, and builds them into the cooperative campaign, adding even more variety, replayability, and fun.
+Multiplayer modes: Vehicles have been added to the multiplayer experience, featuring player rankings, upgradeable weapons, squad-based gameplay, map scripting, and customizable classes and perks.
+Unprecedented WWII cinematic quality: Utilizing the jaw-dropping and revolutionary Call of Duty¨ 4: Modern Warfareª engine, Call of Duty: World at War delivers an unprecedented level of visual and cinematic effects. Highly-detailed character models, self-shadowing, environmental lighting, and amazing special effects up the authenticity to new heights. Depth of field, rim-lighting, and texture-streaming technology bring the adrenaline-pumping combat to life. Physics-enabled battlefields and destructible cover immerse players into the harrowing and dynamic combat.
+Developed exclusively for Xbox 360 by acclaimed developer Bungie, ÒHalo 3: ODSTÓ is a stand-alone expansion that extends the award-winning ÒHalo 3Ó experience with hours of new campaign and multiplayer gameplay.* The release adds a new dimension to an all-encompassing universe that gamers around the world have known and loved for more than six years.
+
+The new campaign chapter predates the events that unfold in ÒHalo 3Ó and gives players a new perspective through the eyes of a new hero in the ÒHaloÓ universe. New multiplayer maps ensure that the award-winning Xbox LIVE experience of ÒHalo 3Ó continues to thrive.
+
+Features: 
+
+Top features include the following:
+
+¥ All-new campaign content. The ÒHalo 3: ODSTÓ campaign is an intriguing side story that takes place during the terrifying events leading up to the Master ChiefÕs return to New Mombasa in ÒHalo 3.Ó Experience the fate of Earth from the brand-new perspective of a special forces ODST (Orbital Drop Shock Trooper), adding a unique outlook and new gameplay elements to the events that unfold in the trilogyÕs finale. While the feel of this new chapter will greatly resemble that of previous ÒHaloÓ experiences, ÒHalo 3: ODSTÓ will require players to employ more elements of stealth and cunning than ever before.
+
+¥ A new hero: Prepare to drop. Known for their courage, valor and, at times, insanity, ODSTs are among the fiercest UNSC soldiers, priding themselves on being the first unit deployed into hostile situations. While not as large or supernaturally gifted as their Spartan comrades, these ÒHell JumpersÓ more than compensate with their ferocious attitudes and unwavering nerve.
+
+¥ Expanded multiplayer collection. No ÒHaloÓ experience would be complete without groundbreaking multiplayer content,* and ÒHalo 3: ODSTÓ gives fans more of what they love. With exclusive new maps and full Forge options, players will find more multiplayer content than ever before with ÒHalo 3: ODST.Ó
+
+¥ Ever-growing community options. Players will continue to enjoy all the great ÒHalo 3Ó technological innovations, including Saved Films, screenshots, Campaign Scoring and four-player co-op. All of the new multiplayer maps fully support the Forge editor, offering endless gameplay customization possibilities for fans.
+Emerging from the underworld, Grand Theft Auto 3 dares to set new levels of unflinching criminal behavior in a dark, ruthless videogame that never pretends to be anything but truly adult entertainment. Make no mistake -- videogames have grown up, and GTA3 demonstrates that fully. Not only is the content severely mature -- how could a game putting you in the shoes of a mob gun-for-hire who has no qualms against hit orders, car jackings, or public use of heavy artillery not earn that M rating? -- but the game itself shows incredible leaps in production values to achieve that gritty reality. Hollywood talents such as Michael Rapaport, and Michael Madson give voice to the gangland thugs and Mafioso, while the PlayStation 2 super-charges GTA3's massive scale of crowded streets crammed with cars to steal. Liberty City is wide open to those who control it, and you're the kind of guy who makes his own key. In all seriousness, this game is rated Mature for a reason -- it's not for those under 17. Otherwise, they don't get much hotter than GRAND THEFT AUTO 3 ... if they know what's good for them.
+From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile. Vice City is a huge urban sprawl ranging from the beach to the swamps and the glitz to the ghetto, and is the most varied and complete digital city ever created. Combining nonlinear gameplay with a character driven narrative, you arrive in a town brimming with seedy opportunities and are given the chance to take it over as you choose. Take control of a variety of vehicles including high-performance cars and motorbikes, powerboats, golf buggies and helicopters. Browse through the radio stations, with styles ranging from rock to electro to find a sultry melody or pumping beat to suit your mood. No matter what type of man you are, Vice City is always full of surprises.
+Halo: Reach, developed exclusively for Xbox 360 by acclaimed developer Bungie, is the blockbuster prequel to the best-selling Xbox franchise of all time. It represents the culmination of BungieÕs 10 years of experience crafting groundbreaking Halo games that have raised expectations for what can be achieved in a video game.
+
+Experience the fateful moments that forged the Halo legend. This is the story of Noble Team, a squad of heroic Spartan soldiers, and their final stand on planet Reach, humanityÕs last line of defense between the terrifying Covenant and Earth. This darker story is echoed by grittier visuals amid a backdrop of massive, awe-inspiring environments. Characters, enemies, and environments are rendered in amazing detail by an all-new engine designed to deliver epic-scale encounters against the cunning and ruthless Covenant.
+
+Once the campaign is over, the battle continues online with an unparalleled multiplayer experience expanding on the award-winning suite of features that helped define the Xbox LIVE experience.
+
+The Halo: Reach multiplayer beta, on track to be the largest beta program of its kind on any console, is expected to see millions of participants when it begins May 3. Players can access the multiplayer beta on Xbox LIVE through the Halo 3: ODST disc.
+
+Meet Noble Team: For the first time, players fight alongside a squad of iconic Spartan soldiers, each with deadly talents as unique as their individual personalities and customized gear.
+An intense campaign: Live the events that set the stage for the Halo trilogy as the UNSC and Covenant clash at the height of their military power. New weapons and abilities complement the familiar Halo arsenal for the largest-scale battles ever witnessed in the Halo universe. Fiercely cunning artificial intelligence adds depth and complexity to each encounter, helping make every playthrough a unique and epic experience.
+Stunning technical advancements: Halo: Reach takes a massive leap forward through all-new engine technology designed to take full advantage of next-generation graphics, audio, special effects, A.I., and animation while continuing to expand on the campaign, cooperative, and multiplayer sandbox in a way that only Halo can.
+The definitive multiplayer experience: Halo: Reach builds on the success of its predecessors, setting a new standard for competitive gameplay, customization, variety and community integration.
+Unparalleled feature suite: Halo: Reach expands on the industry-leading suite of features found in Halo 3, including four-player cooperative campaign play, splitscreen support, saved films, screenshots, and exciting new surprises that have yet to be revealed.
+In Battlefield 3, players step into the role of the elite U.S. Marines. As the first boots on the ground, players will experience heart-pounding missions across diverse locations including Paris, Tehran and New York. As a U.S. Marine in the field, periods of tension and anticipation are punctuated by moments of complete chaos. As bullets whiz by, as walls crumble, as explosions force players to the ground, the battlefield feels more alive and interactive than ever before.
+Just Dance is back and the party is bigger than ever before. The new Just Dance 3 gives a new twist to the already spontaneous and outrageous dance game.
+
+Just Dance 3 kick-starts the party with 45+ tracks from multiple genres, popular artist, and top Billboard tracks. Whatever the occasion, the amazing Just Dance 3 soundtrack and fun game features will get the party started and your friends dancing all night long. 
+
+You werenÕt able to resist the urge to join the party, now you wonÕt be able to leave it. The party machine is on!
+
+Key Features
+Top Of The Charts
+Over 45 all-new tracks, ranging from Billboard/top-charted hits to classic dance party tracks! There's something for all tastes, everyone will find their groove. Want more songs? Download from an expanding catalogue of new tracks from the Xbox Marketplace.
+
+Be Part Of The Band
+With now up to 4 concurrent dance routines, itÕs your time to shine! Each player can get his own moment of fame with unique choreographies and move for each member of the band. 
+
+Top Score Challenge
+Rank on leaderboards with your friends in the all new leaderboards system. Compare each otherÕs score on each song to see whoÕs the best dancer.
+
+Shake The World
+Just Dance 3 lets you bring down the house with dynamic environments. Watch the background change as you perform progressive moves.
+
+Just Sweat It Out
+The popular Just Sweat mode gets an upgrade with more workout plans and playlists. Stay fit, have fun, and Just Dance.
+
+Dance ÔTil You Drop
+Use the Party Mode and lose yourself in the music! No navigating through menus, no need to stop to select the next songÉ Just Dance 3 gives you a non-stop dance-a-thon..... Get ready to dance Ôtil dawn!
+
+Too Shy to DanceÉ But Love to Sing?! 
+All tracks provide song lyrics on-screen. So even if you donÕt score points with your voice, youÕre sure to score some with the crowd!
+
+Just CanÕt Get Enough
+Just Dance 3 still has everyoneÕs favorite modes like Classic Mode, Duet Mode, Medley, Simon Says, and more.
+Modern Warfare is back. The best-selling first person action series of all-time returns with the epic sequel to multiple Game of the Year award winner, Call of Duty¨: Modern Warfare 2.
+
+On November 10, 2009, Infinity Ward's Modern Warfare 2 will strike worldwide. The most-anticipated game of the year and the sequel to the best-selling first-person action game of all time, Modern Warfare 2 continues the gripping and heart-racing action as players face off against a new threat dedicated to bringing the world to the brink of collapse.
+
+
+Game Features:
+
+Epic single-player campaign picks up immediately following the thrilling events from Call of Duty 4: Modern Warfare.
+The definitive multiplayer experience returns, with a host of new perks and enhancements.
+New cooperative SpecOps mode, the perfect combination of Modern Warfare's single-player intensity and the addictive replayability of its multiplayer.
+Pushing the boundaries of what fans have come to expect from the record-setting entertainment franchise, Call of Duty¨: Black Ops II propels players into a near future, 21st Century Cold War, where technology and weapons have converged to create a new generation of warfare.
+
+A time-spanning, generation-spanning narrative, Call of Duty¨: Black Ops 2 introduces players to an insidious villain named Raul Menendez who hijacks the US military infrastructure to further his own agenda. Harness the power of near-future technology and advanced robotics to pull the world back from the brink of annihilation.
+
+Key Game Features
+An all-new Call of Duty¨: Black Ops II storyline featuring new characters and returning characters
+A unique single-player campaign that contains two time periods linked by characters and their actions
+Special Strike Force missions, in which the players action affect the outcome of gameplay and the overall campaign
+A variety of multiplayer modes and play options
+The Empire of Tamriel is on the edge. The High King of Skyrim has
+been murdered.
+
+Alliances form as claims to the throne are made. In the midst of this conflict, a far more dangerous, ancient evil is awakened. Dragons, long lost to the passages of the Elder Scrolls, have returned to Tamriel.
+
+The future of Skyrim, even the Empire itself, hangs in the balance as they wait for the prophesized Dragonborn to come; a hero born with the power of The Voice, and the only one who can stand amongst the dragons.
+The fifth mainline entry in the mega-selling Grand Theft Auto series, Grand Theft Auto V was developed by Rockstar North and published by Rockstar Games originally for the PlayStation 3 and Xbox 360 in 2013. Xbox One and PlayStation 4 versions followed in November of 2014 and finally a Windows PC verison was released in April of 2015.
+
+Grand Theft Auto V is set in the City of Los Santos and its surrounding hills, countryside, and beaches. It is the largest and most ambitious game Rockstar have yet created and, for the first time in the series, features three different playable characters.
+Wake Up John.
+
+Halo 4 is the next blockbuster installment in the iconic franchise that's shaped entertainment history and defined a decade of gaming. Set in the aftermath of Halo 3, Master Chief returns to confront his own destiny and face an ancient evil that threatens the fate of the entire universe. Halo 4 marks the start of a new trilogy that begins with its release in 2012.
+WE ARE ALL WE'VE GOT. This new chapter in the Call of Duty¨ franchise features a fresh dynamic, where players are on the side of a crippled nation, fighting not for freedom, or liberty, but simply to survive. Special Operations forces, a mysterious group known only as Ghosts, lead the battle against a newly-emerged, technologically-superior, global power.
+
+The franchise that has defined a generation of gaming is set to raise the bar once again with the all-new Call of Duty¨: Ghosts. Published by Activision and developed by Infinity Ward, the studio that created the original Call of Duty¨ and the critically-acclaimed Call of Duty¨: Modern Warfare¨ series, Call of Duty¨: Ghosts¨ ushers in the next generation of the franchise, delivering a riveting all-new gameplay experience built on an entirely new story, setting and cast, all powered by a new next-generation Call of Duty¨ engine.
+
+Multiplayer - In Call of Duty¨: Ghosts multiplayer, customize your soldier and squad for the first time. Level environments are more realistic and immersive than ever before.
+Campaign - Outnumbered, Outgunned, But Not Outmatched. This new chapter in the Call of Duty¨ franchise features a fresh dynamic, where players are on the side of a crippled nation, fighting not for freedom, or liberty, but simply to survive. Special Operations forces, a mysterious group known only as Ghosts, lead the battle against a newly-emerged, technologically-superior, global power.
+Extinction - Extinction is a completely new 4-player, co-op game mode featuring a unique blend of fast-paced survival gameplay, base defense, player customization and class leveling rounding out this robust new Call of Duty¨: Ghosts game mode. Teamwork is critical. Your team faces an inhuman menace that has overrun an isolated Colorado town and you must eliminate the threat via any means necessary.
+DLC - Season Pass. Get ready for a full season of amazing content with the Call of Duty¨: Ghosts Season Pass. With the Season Pass youÕll get 4 epic downloadable content packs: ONSLAUGHT, DEVASTATION, INVASION, AND NEMESIS Ð providing brand new multiplayer maps, bonus weapons, and a unique 4-part episodic Extinction experience for one great low price.
+What does the American Dream mean today?
+
+For Niko Bellic, fresh off the boat from Europe, it is the hope he can escape his past.
+
+For his cousin, Roman, it is the vision that together they can find fortune in Liberty City, gateway to the land of opportunity.
+
+As they slip into debt and are dragged into a criminal underworld by a series of shysters, thieves and sociopaths, they discover that the reality is very different from the dream in a city that worships money and status, and is heaven for those who have them and a living nightmare for those who don't.
+`,
+    minLength: 4,
+    ignore: ['with','that','their','the','from','will','than','have'],
+    maxItems: 30,
+    rotate: true
+  }
+};
+
+zingchart.render({ 
+	id: 'myChart_vg', 
+	data: myConfig, 
+	height: 400, 
+	width: '100%' 
+});</script>
+
+<div id="myChart"></div>
+<script>ZC.LICENSE=["b55b025e438fa8a98e32482b5f768ff5"];var myConfig = {
+type: 'wordcloud',
+options: {
+	text: "Accidental Shooting \
+Accidental Shooting - Death \
+Accidental Shooting - Injury \
+Accidental Shooting at a Busines \
+Accidental/Negligent Discharge \
+Animal shot/killed \
+Armed robbery with injury/death and/or evidence of DGU found \
+Assault weapon (AR-15, AK-47, and ALL variants defined by law enforcement) \
+ATF/LE Confiscation/Raid/Arrest \
+Attempted Murder/Suicide (one variable unsuccessful) \
+Bar/club incident - in or around establishment \
+BB/Pellet/Replica gun \
+Brandishing/flourishing/open carry/lost/found \
+Car-jacking \
+Child injured (not child shooter) \
+Child injured by child \
+Child injured self \
+Child Involved Incident \
+Child killed (not child shooter) \
+Child killed by child \
+Child killed self \
+Child picked up & fired gun \
+Child with gun - no shots fired \
+Cleaning gun \
+Concealed Carry License - Perpetrator \
+Concealed Carry License - Victim \
+Criminal act with stolen gun \
+Defensive Use \
+Defensive Use - Crime occurs, victim shoots subject/suspect/perpetrator \
+Defensive Use - Good Samaritan/Third Party \
+Defensive use - No shots fired \
+Defensive Use - Shots fired, no injury/death \
+Defensive Use - Stand Your Ground/Castle Doctrine established \
+Defensive Use - Victim stops crime \
+Defensive Use - WITHOUT a gun \
+Domestic Violence \
+Drive-by (car to street, car to car) \
+Drug involvement \
+Gang involvement \
+Ghost gun \
+Gun at school, no death/injury - elementary/secondary school \
+Gun at school, no death/injury - university/college \
+Gun buy back action \
+Gun range/gun shop/gun show shooting \
+Gun shop robbery or burglary \
+Gun(s) stolen from owner \
+Guns stolen from law enforcement \
+Hate crime \
+Home Invasion \
+Home Invasion - No death or injury \
+Home Invasion - Resident injured \
+Home Invasion - Resident killed \
+Home Invasion - subject/suspect/perpetrator injured \
+Home Invasion - subject/suspect/perpetrator killed \
+House party \
+Hunting accident \
+Implied Weapon \
+Institution/Group/Business \
+Kidnapping/abductions/hostage \
+LOCKDOWN/ALERT ONLY: No GV Incident Occurred Onsite \
+Mass Murder (4+ deceased victims excluding the subject/suspect/perpetrator , one location) \
+Mass Shooting (4+ victims injured or killed excluding the subject/suspect/perpetrator, one location) \
+Mistaken ID (thought it was an intruder/threat, was friend/family) \
+Murder/Suicide \
+NAV \
+Non-Aggression Incident \
+Non-Shooting Incident \
+Officer Involved Incident \
+Officer Involved Incident - Weapon involved but no shots fired \
+Officer Involved Shooting - Accidental discharge - no injury required \
+Officer Involved Shooting - Bystander killed \
+Officer Involved Shooting - Bystander shot \
+Officer Involved Shooting - Officer killed \
+Officer Involved Shooting - Officer shot \
+Officer Involved Shooting - Shots fired, no injury \
+Officer Involved Shooting - subject/suspect/perpetrator killed \
+Officer Involved Shooting - subject/suspect/perpetrator shot \
+Officer Involved Shooting - subject/suspect/perpetrator suicide at standoff \
+Officer Involved Shooting - subject/suspect/perpetrator suicide by cop \
+Officer Involved Shooting - subject/suspect/perpetrator surrender at standoff \
+Officer Involved Shooting - subject/suspect/perpetrator unarmed \
+Pistol-whipping \
+Playing with gun \
+Police Targeted \
+Political Violence \
+Possession (gun(s) found during commission of other crimes) \
+Possession of gun by felon or prohibited person \
+Road rage \
+School Incident \
+School Shooting - elementary/secondary school \
+School Shooting - university/college \
+Self-Inflicted (not suicide or suicide attempt - NO PERP) \
+Sex crime involving firearm \
+Shootout (where VENN diagram of shooters and victims overlap) \
+Shot - Dead (murder, accidental, suicide) \
+Shot - Wounded/Injured \
+Shots Fired - No Injuries \
+Shots fired, no action (reported, no evidence found) \
+ShotSpotter \
+Spree Shooting (multiple victims, multiple locations) \
+Stolen/Illegally owned gun{s} recovered during arrest/warrant \
+Suicide - Attempt \
+Suicide^ \
+Terrorism Involvement \
+Thought gun was unloaded \
+TSA Action \
+Under the influence of alcohol or drugs (only applies to the subject/suspect/perpetrator ) \
+Unlawful purchase/sale \
+Workplace shooting (disgruntled employee)",
+minLength: 4,
+ignore: ['establish','this'],
+maxItems: 30,
+rotate: true
+}
+};
+
+zingchart.render({ 
+id: 'myChart', 
+data: myConfig, 
+height: 400, 
+width: '100%' 
+});</script>
+</body>
+</html>
