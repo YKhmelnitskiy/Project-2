@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guns & Games</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="container">
+            <nav class="navbar navbar-expand-lg mb-1">
+                <!-- Add social media icons -->
+                
+                <!-- Set up button for smaller screens -->
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Set up buttons for nav bar-->
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/wordcloud">Wordcloud</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/analysis">Analysis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/conclusion">Conclusion</a></li>
+                    </ul>
+                </div>
+                <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.pinterest.com" target="_blank" class="fa fa-pinterest"></a>
+                <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+            </nav>
+        <!--Heading-->
+        <h4>Comparison analysis <small class="text-muted">using different NLP techniques</small></h4>
+        <br>
+
+        <!--card row 1-->
+
+        <div class="row">
+            <div class="card-deck" style="max-width: 1140px;">
+                <div class="card"><img src="..." class="card-img-top" id="l1" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Analysis</h5>
+                        <p class="card-text">Initia review of the Hotel marketplace in downtown Cleveland.</p>
+                    </div>
+                    <div id="MassShootingschart" style="max-width: 740px;height: 400px;margin: 0px auto">
+                    </div>
+                </div>
+
+                <div class="card"><img src="..." class="card-img-top" id="r1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Word Analysis - Unigram</h5>
+                        <p class="card-text">The Unigram is a summary of all the word count from the reviews, which helps to understand which words might be the ouliers for further analysis.</p>
+                    </div>
+                    <div id="TotalShootingschart" style="max-width: 740px;height: 400px;margin: 0px auto">
+                    </div>
+                </div>
+
+            </div>
+
+            <!--card row 2-->
+
+            <div class="card-deck" style="max-width: 1140px;">
+                <div class="card"><img src="..." class="card-img-top" id="l2" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Word Analysis - Bigram</h5>
+                        <p class="card-text">Associating word count in sets of two provides a much better understanding of the intent of each review.</p>
+                    </div>
+                </div>
+
+                <div class="card"><img src="..." class="card-img-top" id="r2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Word Analysis - Trigram</h5>
+                        <p class="card-text">Associating word count in sets of three allows us to have a better context of the review, and properly associate the results.</p>
+                    </div>
+                </div>
+
+            </div>
+<!-- Load d3.js and c3.js -->
+    
+    <link href="{{ url_for('static', filename='js/c3-0.7.1/c3.css') }}" rel="stylesheet">
+
+
+    <script src="{{ url_for('static', filename='js/c3-0.7.1/c3.min.js') }}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/c3charttest.js') }}"></script> 
+</body>
+
+</html>
