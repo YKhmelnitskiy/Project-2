@@ -17,14 +17,10 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-# app.config['MYSQL_HOST'] = '127.0.0.1'
-# app.config['MYSQL_USER'] = 'root'
-# app.config['MYSQL_PASSWORD'] = 'Worldcup1!'
-# app.config['MYSQL_DB'] = 'Project_2_DB'
-# mysql = MySQL(app)
 
 
-conn = pymysql.connect('localhost', 'root', 'Worldcup1!', 'Project_2_DB')
+
+conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
 #################################################
 # Database Setup
 #################################################
