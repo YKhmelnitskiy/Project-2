@@ -238,7 +238,7 @@ var myMap = L.map("map", {
 },
 {
   date: "2/20/14",
-  location: [27.7753, -83.6384],
+  location: [27.7753, -82.6384],
   state: "Florida",
   site: "Saint Petersburg",
   fatalities: 0, 

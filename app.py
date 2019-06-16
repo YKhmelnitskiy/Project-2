@@ -20,7 +20,7 @@ app = Flask(__name__)
 
 
 
-conn = pymysql.connect('localhost', 'root', 'Worldcup1!', 'Project_2_DB')
+conn = pymysql.connect('localhost', 'root', '########', 'Project_2_DB')
 #################################################
 # Database Setup
 #################################################
