@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
@@ -72,8 +72,22 @@
 
         <!-- row 2 -->
     </div>
+    <div id="MOAC">
+        <!-- Plotly chart will be drawn inside this DIV -->
     </div>
     
+    </div>
+        <!-- Plotly.js -->
+
+        
+        
+    <!-- D3 and js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/MOAC.js') }}"></script> 
+
 </body>
 
 </html>

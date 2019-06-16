@@ -11,6 +11,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     
 </head>
 
@@ -50,21 +51,21 @@
 
         <div class="row">
             <div class="card-deck" style="max-width: 1140px;">
-                <div class="card"><img src="..." class="card-img-top" id="l1" alt="">
+                <div class="card"><img src="..." class="card-img-top" id="" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Hotel Analysis</h5>
                         <p class="card-text">Initia review of the Hotel marketplace in downtown Cleveland.</p>
                     </div>
-                    <div id="MassShootingschart" style="max-width: 740px;height: 400px;margin: 0px auto">
+                    <div id="MassShootingschart" style="max-width: 500px;height: 400px;margin: 0px auto">
                     </div>
                 </div>
 
-                <div class="card"><img src="..." class="card-img-top" id="r1" alt="...">
+                <div class="card"><img src="..." class="card-img-top" id="" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Word Analysis - Unigram</h5>
                         <p class="card-text">The Unigram is a summary of all the word count from the reviews, which helps to understand which words might be the ouliers for further analysis.</p>
                     </div>
-                    <div id="TotalShootingschart" style="max-width: 740px;height: 400px;margin: 0px auto">
+                    <div id="r1" style="max-width: 500px;height: 400px;margin: 0px auto">
                     </div>
                 </div>
 
@@ -73,17 +74,21 @@
             <!--card row 2-->
 
             <div class="card-deck" style="max-width: 1140px;">
-                <div class="card"><img src="..." class="card-img-top" id="l2" alt="">
+                <div class="card"><img src="..." class="card-img-top" id="hi" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Word Analysis - Bigram</h5>
                         <p class="card-text">Associating word count in sets of two provides a much better understanding of the intent of each review.</p>
                     </div>
+                    <div id="TotalShootingschart" style="max-width: 500px;height: 400px;margin: 0px auto">
+                    </div>
                 </div>
 
-                <div class="card"><img src="..." class="card-img-top" id="r2" alt="...">
+                <div class="card"><img src="..." class="card-img-top" id="rsfdss" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Word Analysis - Trigram</h5>
                         <p class="card-text">Associating word count in sets of three allows us to have a better context of the review, and properly associate the results.</p>
+                    </div>
+                    <div id="r2" style="max-width: 500px;height: 400px;margin: 0px auto">
                     </div>
                 </div>
 
@@ -98,6 +103,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script> 
     <script type="text/javascript" src="{{ url_for('static', filename='js/c3charttest.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/na_sales.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/esrb_by_yearSales.js') }}"></script> 
 </body>
 
 </html>

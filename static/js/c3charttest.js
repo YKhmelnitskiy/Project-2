@@ -1,16 +1,40 @@
+var massdata = d3.json("/MassShootingData").then(function(response){
+    console.log (response);
+    }
+);
+
 var chart = c3.generate({
     bindto: '#MassShootingschart',
     title: {
         text: 'Mass Shootings Chart'
       },
-    data: {
-      x: 'x',
-      columns: [
-          ['x', '2013-01-01', '2014-01-01', '2015-01-01', '2016-01-01', '2017-01-01', '2018-01-01'],
-          ['Killed', 288, 265, 366, 456, 437, 76],
-          ['Injured', 961, 1083, 1324, 1537, 1802, 221],
-          ['Mass shootings', 253, 270, 332, 383, 346, 54]
-      ],
+    data: {json: [{
+            'year': '2013-01-01',
+            'Killed': 200,
+            'Injured': 200,
+            'Mass shootings': 400
+            }, {
+            'year': '2014-01-01',
+            'Killed': 100,
+            'Injured': 300,
+            'Mass shootings': 400
+            }, {
+            'year': '2015-01-01',
+            'Killed': 300,
+            'Injured': 200,
+            'Mass shootings': 500
+            }, {
+            'year': '2016-01-01',
+            'Killed': 400,
+            'Injured': 100,
+            'Mass shootings': 500
+            }, ]
+        // url: '/MassShootingData'
+    ,     keys: {
+                    x: 'year',
+                    value: ['Killed', 'Injured','Mass shootings']
+            }
+            ,
         types: {
           'Mass shootings': 'bar'
         }
@@ -30,6 +54,7 @@ var chart = c3.generate({
       }
   }
 });
+
 //^&^^^^^^^^^^^^^^^
 // for (var i = min(data.year); i < currentyear; i++) {
 
