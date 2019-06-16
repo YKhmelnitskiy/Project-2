@@ -3,8 +3,11 @@ body {
     margin: 0;
     background: #fffdfd;
 }
-
-
+#map,
+body,
+html {
+  height: 100%;
+}
 /*--- navigation bar ---*/
 
 .navbar {
