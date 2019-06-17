@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 
 
-# conn = pymysql.connect('localhost', 'root', 'Worldcup1!', 'Project_2_DB')
+# conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
 
 #################################################
 # Database Setup
@@ -108,7 +108,7 @@ def TotalShootingdata():
 def North_American_sales():
     
    
-    conn = pymysql.connect('localhost', 'root', 'Worldcup1!', 'Project_2_DB')
+    conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
     na_sales = pd.read_sql('SELECT * FROM grouped_years', conn)
     
     na_salesjson = na_sales.to_dict(orient='records')
@@ -118,7 +118,7 @@ def North_American_sales():
 @app.route("/esrb_sales")
 def ESRB_sales():
     """Return the homepage."""
-    conn = pymysql.connect('localhost', 'root', 'Worldcup1!', 'Project_2_DB')
+    conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
     esrb_sales = pd.read_sql('SELECT * FROM grouped_esrb', conn)
 
     esrb_salesjson = esrb_sales.to_dict(orient='records')
@@ -127,7 +127,7 @@ def ESRB_sales():
     
 @app.route("/guns_vg")
 def guns_vg():
-    conn = pymysql.connect('localhost', 'root', 'Worldcup1!', 'Project_2_DB')
+    conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
     combinedguns_vg = pd.read_sql('SELECT * FROM combined_guns_vg', conn)
 
     combinedguns_vgjson = combinedguns_vg.to_dict(orient='records')
