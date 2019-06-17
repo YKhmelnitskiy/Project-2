@@ -5,13 +5,10 @@ import numpy as np
 import pymysql
 import json
 
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine
+
 
 from flask import Flask, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
+
 
 
 
@@ -20,7 +17,8 @@ app = Flask(__name__)
 
 
 
-conn = pymysql.connect('localhost', 'root', '########', 'Project_2_DB')
+# conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
+
 #################################################
 # Database Setup
 #################################################
@@ -108,29 +106,33 @@ def TotalShootingdata():
 
 @app.route("/na_sales")
 def North_American_sales():
-    """Return the homepage."""
-   
     
-    na_sales = pd.read_sql('SELECT * FROM grouped_years', con=conn)
+   
+    conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
+    na_sales = pd.read_sql('SELECT * FROM grouped_years', conn)
+    
     na_salesjson = na_sales.to_dict(orient='records')
-
+    conn.close()
     return jsonify(na_salesjson) 
-
+    
 @app.route("/esrb_sales")
 def ESRB_sales():
     """Return the homepage."""
-   
-    esrb_sales = pd.read_sql('SELECT * FROM grouped_esrb', con=conn)
+    conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
+    esrb_sales = pd.read_sql('SELECT * FROM grouped_esrb', conn)
+
     esrb_salesjson = esrb_sales.to_dict(orient='records')
-
+    conn.close()
     return jsonify(esrb_salesjson) 
-
+    
 @app.route("/guns_vg")
 def guns_vg():
-    combinedguns_vg = pd.read_sql('SELECT * FROM combined_guns_vg', con=conn)
+    conn = pymysql.connect('localhost', 'root', '', 'Project_2_DB')
+    combinedguns_vg = pd.read_sql('SELECT * FROM combined_guns_vg', conn)
+
     combinedguns_vgjson = combinedguns_vg.to_dict(orient='records')
-
+    conn.close()
     return jsonify(combinedguns_vgjson) 
-
+    
 if __name__ == "__main__":
     app.run()
