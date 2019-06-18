@@ -50,53 +50,50 @@
 
         <!--card row 1-->
 
+        <!--card row 1 Revised-->
         <div class="row">
-            <div class="card-deck" style="max-width: 900px;">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Mass Shootings</h5>
-                        <p class="card-text">Gun related incidents with 4 or more victims (2013 and 2018 data partial years).</p>
+                <div class="card-deck" style="max-width: 1140px;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mass Shootings</h5>
+                            <p class="card-text">Gun related incidents with 4 or more victims (2013 and 2018 data partial years).</p>
+                        </div>
+                        <div id="MassShootingschart"></div>
+                            
                     </div>
-                    <div id="MassShootingschart" style="max-width: 500px;height: 400px;margin: 0px auto">
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Video Game Sales 1993-2018</h5>
-                        <p class="card-text">Volume of sales within the continental US.</p>
+                    <div class="card"><class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Video Game Sales 1993-2018</h5>
+                            <p class="card-text">Volume of sales within the continental US</p>
+                        </div>
+                        <div id="r1"></div>
                     </div>
-                    <div id="r1" style="max-width: 500px;height: 400px;margin: 0px auto">
-                    </div>
+
                 </div>
-            </div>
-        </div>
-        <div class="row">
                 <h4>Comparison Analysis: <small class="text-muted">Total shootings from 2013 versus total video game sales by ESRB</small></h4>
             
-            <!--card row 2-->
+            
+            <!--card row 2 Revised-->
+            <div class="card-deck" style="max-width: 1000px;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Shooting</h5>
+                            <p class="card-text">Shootings occurred between 2013-2018 within the continental US (2013 and 2018 data partial years).</p>
+                        </div>
+                        
+                        <div id="TotalShootingschart" ></div>
+                    </div>
 
-            <div class="card-deck" style="max-width: 1100px;">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Shooting</h5>
-                        <p class="card-text">Shootings occurred between 2013-2018 within the continental US (2013 and 2018 data partial years).</p>
+                    <div class="card"><class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Video Games Sales by ESRB Category</h5>
+                            <p class="card-text">The Entertainment Software Rating Board (ESRB) is an American self-regulatory organization that assigns age and content ratings to consumer video games.</p>
+                        </div>
+                        <div id="r2"></div>
                     </div>
-                    <div id="TotalShootingschart" style="max-width: 500px;height: 400px;margin: 0px auto">
-                    </div>
+
                 </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Video Games Sales by ESRB Category</h5>
-                        <p class="card-text">The Entertainment Software Rating Board (ESRB) is an American self-regulatory organization that assigns age and content ratings to consumer video games.</p>
-                    </div>
-                    <div id="r2" style="max-width: 500px;height: 400px;margin: 0px auto">
-                    </div>
-                </div>
-
-            </div>
-        </div>
 <!-- Load d3.js and c3.js -->
     
     <link href="{{ url_for('static', filename='js/c3-0.7.1/c3.css') }}" rel="stylesheet">
