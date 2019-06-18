@@ -38,7 +38,11 @@ Game:
 
 ## Technology
 
-We use different techniques and libraries learned in the CWR Data Analytics bootcamp, like Flask, HTML, Bootstrap, and Javascript.
+We used different techniques and libraries learned in the CWR Data Analytics bootcamp, like Flask, HTML, Bootstrap, and Javascript.
+
+## Deployment
+
+This project has only scholar purposes, so no further analysis or deployment will be provided. If you are interested in learning more about Games and Gun violence, you can refer to this website https://videogames.procon.org/ , which contains an interesting analysis of the correlation between this topic.
 
 
 
