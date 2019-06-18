@@ -80,12 +80,12 @@ nav {
 
 /*--- Formatting card deck ---*/
 .card-deck {
-    margin: 0 auto;
-    /* Added */
-    float: none;
-    /* Added */
-    margin-bottom: 150px;
-    /* Added */
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 50px;
+  /* Added */
 }
 .card {display:inline-block;
         margin: 10px; /* Added */
