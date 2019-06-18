@@ -1,3 +1,4 @@
+// Authored by ‘Robert Rua’, ‘Jeremy Halek’, ‘Gaston Alvarado’, ‘Yevgeniy Khmelnitskiy’,  ‘Anthony Uhuegbue’
 // Plotly.d3.csv("grouped_years.csv", function(err, rows) {
     function unpack(rows, key) {
         console.log(typeof(rows))
@@ -32,5 +33,5 @@
         title: 'Total VG Sales vs Total Violent Incidents',
     };
 
-    Plotly.plot('MOAC', data, layout);
+    Plotly.plot('MOAC', data, layout,{responsive: true});
  })

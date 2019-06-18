@@ -1,3 +1,4 @@
+// Authored by ‘Robert Rua’, ‘Jeremy Halek’, ‘Gaston Alvarado’, ‘Yevgeniy Khmelnitskiy’,  ‘Anthony Uhuegbue’
 function unpack(rows, key) {
     
     return rows.map(function(row) { return row[key]; });
@@ -42,8 +43,8 @@ d3.json("/esrb_sales").then(function(response){
         },
         yaxis: {
             title: 'Total Sales in North America (M)'
-        },
-        title: 'Total Sales in NA 1993-2018 by ESRB Rating'
+        }
+        // title: 'Total Sales in NA 1993-2018 by ESRB Rating'
     };
 
     Plotly.plot('r2', data, layout, { responsive: true});

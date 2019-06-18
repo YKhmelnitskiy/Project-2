@@ -1,3 +1,4 @@
+<!-- Authored by ‘Robert Rua’, ‘Jeremy Halek’, ‘Gaston Alvarado’, ‘Yevgeniy Khmelnitskiy’,  ‘Anthony Uhuegbue’ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,17 +45,17 @@
                 <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
             </nav>
         <!--Heading-->
-        <h4>Comparison analysis <small class="text-muted">using different NLP techniques</small></h4>
+        <h4>Comparison analysis <small class="text-muted">Mass shootings from 2013 and the video game sales by category from 2013 to 2018.</small></h4>
         <br>
 
         <!--card row 1-->
 
         <div class="row">
-            <div class="card-deck" style="max-width: 1140px;">
+            <div class="card-deck" style="max-width: 900px;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Analysis</h5>
-                        <p class="card-text">Initia review of the Hotel marketplace in downtown Cleveland.</p>
+                        <h5 class="card-title">Mass Shootings</h5>
+                        <p class="card-text">Gun related incidents with 4 or more victims (2013 and 2018 data partial years).</p>
                     </div>
                     <div id="MassShootingschart" style="max-width: 500px;height: 400px;margin: 0px auto">
                     </div>
@@ -62,22 +63,24 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Word Analysis - Unigram</h5>
-                        <p class="card-text">The Unigram is a summary of all the word count from the reviews, which helps to understand which words might be the ouliers for further analysis.</p>
+                        <h5 class="card-title">Total Video Game Sales 1993-2018</h5>
+                        <p class="card-text">Volume of sales within the continental US.</p>
                     </div>
                     <div id="r1" style="max-width: 500px;height: 400px;margin: 0px auto">
                     </div>
                 </div>
-
             </div>
-
+        </div>
+        <div class="row">
+                <h4>Comparison Analysis: <small class="text-muted">Total shootings from 2013 versus total video game sales by ESRB</small></h4>
+            
             <!--card row 2-->
 
-            <div class="card-deck" style="max-width: 1140px;">
+            <div class="card-deck" style="max-width: 1100px;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Word Analysis - Bigram</h5>
-                        <p class="card-text">Associating word count in sets of two provides a much better understanding of the intent of each review.</p>
+                        <h5 class="card-title">Total Shooting</h5>
+                        <p class="card-text">Shootings occurred between 2013-2018 within the continental US (2013 and 2018 data partial years).</p>
                     </div>
                     <div id="TotalShootingschart" style="max-width: 500px;height: 400px;margin: 0px auto">
                     </div>
@@ -85,14 +88,15 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Word Analysis - Trigram</h5>
-                        <p class="card-text">Associating word count in sets of three allows us to have a better context of the review, and properly associate the results.</p>
+                        <h5 class="card-title">Total Video Games Sales by ESRB Category</h5>
+                        <p class="card-text">The Entertainment Software Rating Board (ESRB) is an American self-regulatory organization that assigns age and content ratings to consumer video games.</p>
                     </div>
                     <div id="r2" style="max-width: 500px;height: 400px;margin: 0px auto">
                     </div>
                 </div>
 
             </div>
+        </div>
 <!-- Load d3.js and c3.js -->
     
     <link href="{{ url_for('static', filename='js/c3-0.7.1/c3.css') }}" rel="stylesheet">
@@ -102,7 +106,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script> 
-    <script type="text/javascript" src="{{ url_for('static', filename='js/c3charttest.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/c3chartsforshootings.js') }}"></script> 
     <script type="text/javascript" src="{{ url_for('static', filename='js/na_sales.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/esrb_by_yearSales.js') }}"></script> 
 </body>
