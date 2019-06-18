@@ -1,13 +1,9 @@
-// var massdata = d3.json("/MassShootingData").then(function(response){
-//     console.log (response);
-//     }
-// );
-
+// Authored by ‘Robert Rua’, ‘Jeremy Halek’, ‘Gaston Alvarado’, ‘Yevgeniy Khmelnitskiy’,  ‘Anthony Uhuegbue’
 var chart = c3.generate({
     bindto: '#MassShootingschart',
-    title: {
-        text: 'Mass Shootings Chart'
-      },
+    // title: {
+    //     text: 'Mass Shootings Chart'
+    //   },
     data: {json: [{
             'year': '2013-01-01',
             'Killed': 288,
@@ -75,9 +71,9 @@ var chart = c3.generate({
 
 var chart2 = c3.generate({
     bindto: '#TotalShootingschart',
-    title: {
-        text: 'Total Shootings Chart'
-      },
+    // title: {
+    //     text: 'Total Shootings Chart'
+    //   },
     data: {
         x: 'year',
         columns: [

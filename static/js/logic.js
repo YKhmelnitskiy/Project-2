@@ -1,8 +1,9 @@
+// Authored by ‘Robert Rua’, ‘Jeremy Halek’, ‘Gaston Alvarado’, ‘Yevgeniy Khmelnitskiy’,  ‘Anthony Uhuegbue’
 // Create a map object
 var myMap = L.map("map", {
-    // Center map on Cleveland, OH 
-    center: [41.4993, -81.6944],
-    zoom: 6
+    // Center map 
+    center: [39.82, -98.57],
+    zoom: 5
     // layers: [streetmap, heatmap, satellite]
   });
   
@@ -439,7 +440,7 @@ var myMap = L.map("map", {
       // Setting our circle's radius equal to the output of our markerSize function
       // This will make our marker's size proportionate to its population
       radius: markerSize(mass_shootings[i].injuries)
-    }).bindPopup("<h1>" + mass_shootings[i].state + ", " + mass_shootings[i].site + "</h1> <hr> <h3>Date: " + 
+    }).bindPopup("<h2>" + mass_shootings[i].site + ", " + mass_shootings[i].state + "</h2> <hr> <h3>Date: " + 
       mass_shootings[i].date + "</h3> <hr> <h2>Fatalities: " + mass_shootings[i].fatalities + "</h2> <hr> <h2>Injuries: "
       + mass_shootings[i].injuries + "</h2>").addTo(myMap);
   }

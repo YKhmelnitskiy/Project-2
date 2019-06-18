@@ -1,3 +1,4 @@
+// Authored by ‘Robert Rua’, ‘Jeremy Halek’, ‘Gaston Alvarado’, ‘Yevgeniy Khmelnitskiy’,  ‘Anthony Uhuegbue’
 // Plotly.d3.csv("grouped_years.csv", function(err, rows) {
     function unpack(rows, key) {
         
@@ -28,8 +29,8 @@
             },
             yaxis: {
                 title: 'Sales in North America (M)'
-            },
-            title: '1993-2018 Total VG Sales in North America'
+            }
+            //title: '1993-2018 Total VG Sales in North America'
     
         };
     
